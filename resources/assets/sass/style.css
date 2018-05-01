@@ -1,0 +1,142 @@
+body {
+    padding-top: 51px;
+}
+
+.col-xs-12 {
+    background-color: #fff;
+}
+#sidebar {
+    height: 100%;
+    padding-right: 0;
+    padding-top: 20px;
+}
+#sidebar .nav {
+    width: 95%;
+}
+#sidebar li {
+    border:0 #f2f2f2 solid;
+    border-bottom-width:1px;
+}
+/* collapsed sidebar styles */
+@media screen and (max-width: 767px) {
+    .row-offcanvas {
+        position: relative;
+        -webkit-transition: all 0.25s ease-out;
+        -moz-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
+    }
+    .row-offcanvas-right
+    .sidebar-offcanvas {
+        right: -41.6%;
+    }
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+        left: -41.6%;
+    }
+    .row-offcanvas-right.active {
+        right: 41.6%;
+    }
+    .row-offcanvas-left.active {
+        left: 41.6%;
+    }
+    .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+        width: 41.6%;
+    }
+    #sidebar {
+        padding-top:0;
+    }
+}
+.box{
+    border: dotted 1px #2a48b2;
+    border-radius: 5px;
+    /*margin-bottom: 20px;*/
+    /*height:253px;*/
+}
+.box:hover{
+    border:solid 1px #2a88bd;
+}
+.box .job-desc:hover,.box .panel-heading:hover{
+    cursor: pointer;
+    color:#2a88bd;
+}
+.box:hover, .box:hover>.panel-heading, .panel-heading:hover{
+    background:#efeeee;
+}
+
+.box .level{
+    font-weight:bold;
+    font-style:italic;
+}
+.box .footer-hr{
+    margin-top:10px;
+}
+.box .panel-heading{
+    padding:0 5px 0 5px;
+    height:44px;
+    border-bottom:none;
+}
+.box .panel-footer{
+    background:transparent;
+}
+.box .panel-body{
+    height:178px;
+}
+#back2Top {
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 34px;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}
+#editor {overflow:scroll; max-height:300px}
+
+
+.sortable-rows {
+    cursor: move;
+    padding-bottom:10px;
+}
+.sortable-rows .ui-state-highlight {
+    width: 100%;
+    background-color: #6fb2cc;
+    border-top: #ccc 1px dotted;
+    border-bottom: #ccc 1px dotted;
+    padding-bottom:10px;
+    height:40px;
+}
+.sortable-rows .row {
+    border-bottom: dotted 1px #cccccc;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+
+.StripeElement {
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+    border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+}
