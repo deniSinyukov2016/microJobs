@@ -151,7 +151,8 @@
             <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
                 <ul class="nav">
                     <li class="active"><a href="/">Home</a></li>
-                    @foreach(\App\Models\Jobs\Categories::orderBy('cat_order','ASC')->get() as $cat)
+                    {{--//TODO this code was added --}}
+                    @foreach(\App\Queries\CategoryQuery::onlyParent()->orderBy('cat_order','ASC')->get() as $cat)
                         <li>
                             <a href="/jobs/category/{{$cat->id}}">{{ucwords($cat->name)}}
                                 <span class="label label-info pull-right">{{count($cat->openJobs)}}</span>
